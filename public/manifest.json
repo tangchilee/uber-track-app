@@ -1,0 +1,22 @@
+{
+    "short_name": "UberTrack",
+    "name": "Uber Eats 跑單紀錄",
+    "icons": [
+      {
+        "src": "https://cdn-icons-png.flaticon.com/512/5996/5996258.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#10b981",
+    "background_color": "#ffffff"
+  }
+  ```
+  
+  #### 2. 修改 `index.html`
+  在 `public` 資料夾內找到 `index.html`，在 `<head>` 標籤裡面（大約第 5 行左右），加入這一行：
+  
+  ```html
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
